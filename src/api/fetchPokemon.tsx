@@ -3,7 +3,6 @@ import { formatPokemonName } from "../utils/utils";
 
 export async  function fetchPokemon(name: string): Promise<IpokeDetails> {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${formatPokemonName(name)}`);
-    console.log(response);
     if (!response.ok) {
         throw new Error(response.statusText);
       }
