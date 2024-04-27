@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+   --bg-color: #afafaf;
+   --bg-gradient: linear-gradient{
+        105deg,
+        rgba(184,203,237,1)0%
+        rgb(136, 234, 132)100%,
+    };
+    --bg-border: linear-gradient{
+        90deg,
+        rgba(124,166,252,1)0%
+        rgb(119,235,129,1)100%,
+    }
+};
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+    display: grid;
+    grid-template-rows:auto 1fr;
+    min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main{
+    padding: 10px;
+    height: 100%;
+    overflow: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.listItem{
+    display: flex;
+    border-bottom:  3px solid #e4e4e4;
+    padding: 10px;
+    text-decoration: none;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listItem >:first-child{
+    margin-right: 15px;
+}
+
+.listItem > :last-child{
+    margin: 0;
+}
+
+.listItemIcon{
+    width: 3rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.listItemText{
+    flex-grow: 2;
+}
+
+.listItemText >:first-child{
+    font-size: 1rem;
+    color:var(--bg-gradient);
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 11px;
+    font-weight: bold;
+}
+
+.listItemText >:last-child{
+    color: gray;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.header{
+    display: grid;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    place-items:  center;
+    background: rgba(99, 1, 129, 0.8);
+}
+
+.input{
+    background-color: rgba(230, 250, 247, 0.98);
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin:10px 10px;
+    border: none;
+    width: 70vh;
+}
+
+.footer{
+    padding:2px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(202,70,252,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position:fixed;
+    bottom:  0;
+}
+
+.footerLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #292929;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.footerIcon{
+    width: 40px;
+    margin: 5px 0;
+    border-radius: 50%;
+}
+
+.BounceLoader{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 300px;
+}
+
+.botton{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background: none;
+    padding: 50px 50px 0 50px;
+}
+
+.pokemond{
+    height: 84vh;
+}
+
+.pokeImg{
+    width: 30px;
+    height: 28px;
+    margin-right: 5px;
+}
+
+.pokemonInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px o;
+}
+
+.pokeInfoImg{
+    width:250px;
+}
+
+.contain {
+    background: rgb(240,213,252);
+    background: radial-gradient(circle, rgba(240,213,252,0.3894736842105263) 0%, rgba(222,227,251,1) 83%, rgba(133,4,106,0.9920343137254902) 100%);
+}
+
+h1{
+    color: white;
 }
