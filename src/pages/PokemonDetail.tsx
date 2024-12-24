@@ -30,7 +30,10 @@ if(loadin || !pokemon){
 }
 
   return (
-    <div className="contain">
+    <div className="contain"> 
+    <h1>hola orlando flor</h1>
+    jdfnmc xkdv
+
       <button className="botton" onClick={() => navigate(-1)}>
         <img className="pokeImg" src={pokeball} alt="" /> Regresar
       </button>
