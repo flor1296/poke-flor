@@ -35,7 +35,10 @@ if(loadin || !pokemon){
         <img className="pokeImg" src={pokeball} alt="" /> Regresar
       </button>
       <div className="pokemond">
+        <h1>prueba 2 orlando</h1>
+
       <main className="pokemonInfo">
+        <h1>hola hermanos2</h1>
         <div><h2>{pokemon?.name}</h2></div>
         <div><img className="pokeInfoImg" src={pokemon?.imgSrc}alt="" /> </div>
         <div>Nro {pokemon?.id} </div>
