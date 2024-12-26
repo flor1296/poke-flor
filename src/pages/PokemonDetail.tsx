@@ -37,6 +37,8 @@ if(loadin || !pokemon){
       <div className="pokemond">
       <main className="pokemonInfo">
         <div><h2>{pokemon?.name}</h2></div>
+        <h1>vegeta </h1>
+        
         <div><img className="pokeInfoImg" src={pokemon?.imgSrc}alt="" /> </div>
         <div>Nro {pokemon?.id} </div>
         <div>HP: {pokemon?.hp} </div>
