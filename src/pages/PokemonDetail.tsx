@@ -39,6 +39,7 @@ if(loadin || !pokemon){
         <div><h2>{pokemon?.name}</h2></div>
         <div><img className="pokeInfoImg" src={pokemon?.imgSrc}alt="" /> </div>
         <div>Nro {pokemon?.id} </div>
+        <div><h1>BDT</h1></div>
         <div>HP: {pokemon?.hp} </div>
         <div>ATTACK: {pokemon?.attack} </div>
         <div>DEFENSE:{pokemon?.defense} </div>
