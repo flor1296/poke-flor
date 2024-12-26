@@ -36,6 +36,7 @@ if(loadin || !pokemon){
       </button>
       <div className="pokemond">
       <main className="pokemonInfo">
+        <div><h1>Prueba Jesus</h1></div>
         <div><h2>{pokemon?.name}</h2></div>
         <div><img className="pokeInfoImg" src={pokemon?.imgSrc}alt="" /> </div>
         <div>Nro {pokemon?.id} </div>
@@ -47,4 +48,4 @@ if(loadin || !pokemon){
       <Footer />
     </div>
   )
-}
+};
