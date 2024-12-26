@@ -32,7 +32,7 @@ if(loadin || !pokemon){
   return (
     <div className="contain">
       <button className="botton" onClick={() => navigate(-1)}>
-        <img className="pokeImg" src={pokeball} alt="" /> Regresar
+        <img className="pokeImg" src={pokeball} alt="" /> Pickachud
       </button>
       <div className="pokemond">
       <main className="pokemonInfo">
